@@ -66,11 +66,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
         android:layout_marginTop="8dp"
-        android:background="@color/colorPrimaryDark"
+        style="@style/MyStyle"
         android:padding="8dp"
         android:text="Layout Workout"
-        android:textColor="@android:color/white"
-        android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
