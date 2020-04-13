@@ -32,7 +32,7 @@
         <ImageView
             android:id="@+id/person1ImageView"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             app:layout_constraintEnd_toStartOf="@+id/person2ImageView"
             app:layout_constraintHorizontal_bias="0.5"
@@ -43,7 +43,7 @@
         <ImageView
             android:id="@+id/person2ImageView"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             app:layout_constraintEnd_toStartOf="@+id/person3ImageView"
             app:layout_constraintHorizontal_bias="0.5"
@@ -54,7 +54,7 @@
         <ImageView
             android:id="@+id/person3ImageView"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -76,9 +76,15 @@
 
         <ImageView
             android:id="@+id/image1imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="100dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="100dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintEnd_toStartOf="@+id/image2imageView"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -87,9 +93,12 @@
 
         <ImageView
             android:id="@+id/image2imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="@+id/image1imageView"
+            app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintEnd_toStartOf="@+id/image3imageView"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/image1imageView"
@@ -98,9 +107,12 @@
 
         <ImageView
             android:id="@+id/image3imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="@+id/image2imageView"
+            app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintEnd_toStartOf="@+id/image4imageView"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/image2imageView"
@@ -109,9 +121,12 @@
 
         <ImageView
             android:id="@+id/image4imageView"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="@+id/image3imageView"
+            app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/image3imageView"
