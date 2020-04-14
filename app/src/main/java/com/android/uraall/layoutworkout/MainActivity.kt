@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun changeText() {
-        val myTextView: TextView = findViewById(R.id.textView)
+//        val myTextView: TextView = findViewById(R.id.textView)
 
 //        myTextView.text = "Data Binding"
 
